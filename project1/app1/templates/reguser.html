@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1 align="center" style="color: white;">User Registration page</h1>
+   
+<form action="{% url 'reguser' %}" method="post" class="form">
+    {% csrf_token %}
+    <h1 id="msg" style="color: red;">{{msg}}</h1>
+<input type="text" name="fname" placeholder="firstname" required><br><br>
+<input type="text" name="lname" placeholder="lastname" required><br><br>
+<input type="email" name="email" placeholder="email_id" required><br><br>
+<input type="number" name="contact" placeholder="contact" required><br><br>
+<input type="password" name="password" placeholder="password" required><br><br>
+<input type="password" name="cpassword" placeholder="cpassword" required><br><br>
+<input type="submit" value="Submit">
+
+</form>
+
+{% endblock content %}

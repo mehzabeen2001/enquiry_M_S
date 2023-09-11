@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1 align="center" style="color: white;">Admin Login page</h1>
+<h2 style="color: red;">{{msg}}</h2>
+<form action="{% url 'loginadmin' %}" method="post" class="form">
+    {% csrf_token %}
+
+
+<input type="email" name="email" placeholder="email_id" required ><br><br>
+<input type="password" name="password" placeholder="password" required><br><br>
+<input type="submit" value="Submit">
+
+</form>
+{% endblock content %}
+

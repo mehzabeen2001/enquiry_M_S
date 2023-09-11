@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h1 id="msg" style="color: red;">{{msg}}</h1>
+<h1 align="center" style="color: white;"> Query-Form</h1>
+<form action="{% url 'insertquery' %}" method="post" class="form">
+    {% csrf_token %}
+
+<input type="text" name="name" placeholder="Name" required><br><br>
+<input type="email" name="email" placeholder="email_id" required><br><br>
+<input type="number" name="contact" placeholder="Contact No" required><br><br>
+<input type="text" name="query" placeholder="Enter Query" required><br><br>
+<input type="submit" value="Submit">
+
+</form>
+{% endblock content %}

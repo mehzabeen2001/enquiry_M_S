@@ -1,0 +1,86 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../images/bg1.jpg");
+}
+#msg{
+  color: red;
+  margin:  auto;
+  
+}
+#nav {
+  height: 70px;
+  background-color: rgb(22, 6, 6, 0.8);
+  color: white;
+}
+.foot {
+  margin-top: 100px;
+  padding: 1.5rem;
+  height: 70px;
+  background-color: rgb(22, 6, 6, 0.8);
+  color: white;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.head {
+  text-align: center;
+  font-family: Kristen ITC;
+  padding: 15px;
+  font-size: 30px;
+}
+.one {
+  width: 300px;
+  height: 300px;
+  border: black solid 2px;
+  border-radius: 20%;
+  background-color: rgb(22, 6, 6, 0.8);
+  color: white;
+  padding: 15px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.two {
+  width: 300px;
+  height: 300px;
+  margin-right: 100px;
+  border: black solid 2px;
+  border-radius: 20%;
+  background-color: rgb(22, 6, 6, 0.8);
+  color: white;
+  padding: 15px;
+  margin-top: 100px;
+}
+.btn {
+  margin-left: 50px;
+  width: 200px;
+  height: 50px;
+}
+.form {
+  width: 600px;
+  margin-left: 360px;
+  border: black solid 2px;
+  border-radius: 20px;
+  background-color: rgb(22, 6, 6, 0.);
+  color: white;
+  padding: 50px;
+  margin-top: 50px;
+  padding-left: 180px;
+}
+input {
+  width: 250px;
+  height: 40px;
+}
+input[type="submit"] {
+  width: 180px;
+  height: 40px;
+}
+::placeholder {
+  font-size: 20px;
+  padding-left: 10px;
+}

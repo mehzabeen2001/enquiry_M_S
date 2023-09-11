@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block content %}
+<h1 id="msg" style="color: red;">{{msg}}</h1>
+<h1 align="center" style="color: white;">User Login page</h1>
+<form action="{% url 'loginuser' %}" method="post" class="form">
+    {% csrf_token %}
+
+
+<input type="email" name="email" placeholder="email_id" required><br><br>
+<input type="password" name="password" placeholder="password" required><br><br>
+<input type="submit" value="Submit">
+
+</form>
+{% endblock content %}
